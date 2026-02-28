@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A664C0DB2F526A4F00878E3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A664C0D72F526A4F00878E3C /* Assets.xcassets */; };
+		A664C0DC2F526A4F00878E3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664C0D82F526A4F00878E3C /* ContentView.swift */; };
+		A664C0DD2F526A4F00878E3C /* CustomShapesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664C0D92F526A4F00878E3C /* CustomShapesApp.swift */; };
+		A664C0E12F526AD000878E3C /* RightTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664C0E02F526AD000878E3C /* RightTriangle.swift */; };
+		A664C0E32F5270EA00878E3C /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664C0E22F5270EA00878E3C /* Arrow.swift */; };
+		A664C0E52F52761300878E3C /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = A664C0E42F52761300878E3C /* Star.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A664C0C32F5269A600878E3C /* Custom Shapes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom Shapes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A664C0D72F526A4F00878E3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A664C0D82F526A4F00878E3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A664C0D92F526A4F00878E3C /* CustomShapesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapesApp.swift; sourceTree = "<group>"; };
+		A664C0E02F526AD000878E3C /* RightTriangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightTriangle.swift; sourceTree = "<group>"; };
+		A664C0E22F5270EA00878E3C /* Arrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrow.swift; sourceTree = "<group>"; };
+		A664C0E42F52761300878E3C /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		A664C0C52F5269A600878E3C /* Custom Shapes */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Custom Shapes";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A664C0C02F5269A600878E3C /* Frameworks */ = {
@@ -32,7 +39,7 @@
 		A664C0BA2F5269A600878E3C = {
 			isa = PBXGroup;
 			children = (
-				A664C0C52F5269A600878E3C /* Custom Shapes */,
+				A664C0DA2F526A4F00878E3C /* CustomShapes */,
 				A664C0C42F5269A600878E3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,35 @@
 				A664C0C32F5269A600878E3C /* Custom Shapes.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A664C0DA2F526A4F00878E3C /* CustomShapes */ = {
+			isa = PBXGroup;
+			children = (
+				A664C0D92F526A4F00878E3C /* CustomShapesApp.swift */,
+				A664C0D72F526A4F00878E3C /* Assets.xcassets */,
+				A664C0DF2F526AA900878E3C /* Shapes */,
+				A664C0DE2F526A5B00878E3C /* Views */,
+			);
+			path = CustomShapes;
+			sourceTree = "<group>";
+		};
+		A664C0DE2F526A5B00878E3C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A664C0D82F526A4F00878E3C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A664C0DF2F526AA900878E3C /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				A664C0E02F526AD000878E3C /* RightTriangle.swift */,
+				A664C0E22F5270EA00878E3C /* Arrow.swift */,
+				A664C0E42F52761300878E3C /* Star.swift */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +95,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				A664C0C52F5269A600878E3C /* Custom Shapes */,
 			);
 			name = "Custom Shapes";
 			packageProductDependencies = (
@@ -85,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A664C0BE2F5269A600878E3C /* Build configuration list for PBXProject "Custom Shapes" */;
+			buildConfigurationList = A664C0BE2F5269A600878E3C /* Build configuration list for PBXProject "CustomShapes" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -109,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A664C0DB2F526A4F00878E3C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A664C0DC2F526A4F00878E3C /* ContentView.swift in Sources */,
+				A664C0E32F5270EA00878E3C /* Arrow.swift in Sources */,
+				A664C0DD2F526A4F00878E3C /* CustomShapesApp.swift in Sources */,
+				A664C0E52F52761300878E3C /* Star.swift in Sources */,
+				A664C0E12F526AD000878E3C /* RightTriangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +352,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A664C0BE2F5269A600878E3C /* Build configuration list for PBXProject "Custom Shapes" */ = {
+		A664C0BE2F5269A600878E3C /* Build configuration list for PBXProject "CustomShapes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A664C0CC2F5269A900878E3C /* Debug */,
